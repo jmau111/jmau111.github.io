@@ -1,0 +1,62 @@
+[
+	{
+		"url": "https://a.co/d/8GN7pTI",
+		"title": "The art of memory forensics",
+		"author": " Michael Hale Ligh, Andrew Case, Jamie Levy, AAron Walters ",
+		"img": "memory-forensics.jpg"
+	},
+	{
+		"url": "https://a.co/d/3N4Ffgg",
+		"title": "Metasploit Penetration Testing Cookbook",
+		"author": " Abhinav Singh, Nipun Jaswal, Monika Agarwal, Daniel Teixeira",
+		"img": "metasploit.jpg"
+	},
+	{
+		"url": "https://a.co/d/852A4cn",
+		"title": "The Practice of Network Security Monitoring",
+		"author": "Richard Bejtlich ",
+		"img": "security-monitoring.jpg"
+	},
+	{
+		"url": "https://www.amazon.com/CSS-Secrets-Solutions-Everyday-Problems/dp/1449372635",
+		"title": "CSS Secrets",
+		"author": "Lea Verou",
+		"img": "csssecrets.jpg"
+	},
+	{
+		"url": "https://a.co/d/dGyjz8A",
+		"title": "La promesse de l'aube (fr)",
+		"author": "Romain Gary",
+		"img": "gary-aube.jpg"
+	},
+	{
+		"url": "https://a.co/d/aK6vxHK",
+		"title": "Ubik",
+		"author": "Philip K. Dick",
+		"img": "ubik.jpg"
+	},
+	{
+		"url": "https://a.co/d/6on2Pvw",
+		"title": "Animal Farm",
+		"author": "George Orwell",
+		"img": "animal-farm.jpg"
+	},
+	{
+		"url": "https://a.co/d/f0B6NnW",
+		"title": "Valerian, The Complete Collection",
+		"author": "Pierre Christin, Jean-Claude Mézières",
+		"img": "valerian.jpg"
+	},
+	{
+		"url":"https://a.co/d/gvrMlC5",
+		"title": "The Hacker Playbook 3",
+		"author": "Peter Kim",
+		"img": "hacker-playbook.jpg"
+	},
+	{
+		"url": "https://a.co/d/gs1bxga",
+		"title": "Practical Linux Forensics",
+		"author": "Bruce Nikkel",
+		"img": "practical-forensics.jpg"
+	}
+]

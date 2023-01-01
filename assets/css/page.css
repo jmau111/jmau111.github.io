@@ -1,0 +1,283 @@
+.content {
+  padding: 1rem 0;
+  border-radius: 2px;
+  min-height: 50vh;
+  background: var(--in-white);
+}
+
+.main ol,
+.main img:not(.avatar-img),
+.main ul:not(.post-authors-list), 
+.main p {
+  margin: 30px 2rem;
+}
+
+.main ul:not(.post-authors-list) {
+  list-style: disc;
+}
+
+pre {
+  padding: 2rem;
+}
+
+h2, 
+h3, 
+h4 {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  scroll-margin-top: 72px;
+  background: var(--in-blue);
+}
+
+.heading-link {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/images/link.svg") no-repeat center center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.post-authors h3 {
+  margin-top: 0;
+}
+
+.content li {
+  margin-left: 1rem;
+}
+
+.toc {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: var(--in-white);
+  border-radius: 2px;
+  border-bottom: 1px solid var(--in-gray);
+}
+
+.toc nav {
+  margin: 1rem .5rem;
+}
+
+.toc li,
+.footnotes li {
+  margin-left: 0;
+}
+
+.toc li ul {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+#toc ul {
+  margin: .5rem;
+  counter-reset: counted;
+  list-style-type: none;
+}
+
+.toc li:before {
+  color: var(--in-blue);
+  counter-increment: counted;
+  content: counters(counted, ".") "-> ";
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+blockquote {
+  padding: 10px 30px;
+  border: 1px solid var(--in-pink);
+  border-left: 0;
+  border-right: 0;
+  background-color: var(--in-coco);
+  background-image: url(/images/openquote.gif);
+  background-position: middle left;
+  background-repeat: no-repeat;
+}
+
+.footnotes {
+  background-color: var(--in-coco);
+}
+
+.footnotes:before {
+  content: "Footnotes";
+}
+
+.footnotes ol {
+  counter-reset: footnotes;
+  list-style-type: none;
+  list-style-type: none;
+}
+
+.footnotes li:before {
+  color: var(--in-blue);
+  counter-increment: footnotes;
+  content: counters(footnotes, ".") "- ";
+}
+
+.footnotes p {
+  display: inline;
+}
+
+.highlight {
+  overflow-x: scroll;
+  white-space: pre-wrap;
+  tab-width: 2;
+  border-top: 1px solid var(--in-pink);
+  border-bottom: 1px solid var(--in-pink);
+  border-radius: 2px;
+}
+
+.avatar-info,
+.post-authors {
+  background: var(--in-white);
+  padding: 1rem 2rem 2rem;
+}
+
+.post-authors h3 {
+  background: var(--in-white);
+}
+
+.post-authors ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.post-authors li {
+  position: relative;
+  padding: 1rem;
+  margin: 0;
+}
+
+.post-authors li:before {
+  position: absolute;
+  top: -.25rem;
+  left: -.25rem;
+  content: "☛";
+  font-size: 2rem;
+  transform: rotate(15deg);
+}
+
+.avatar {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+}
+
+.avatar-img {
+  border: 1px solid var(--in-coco);
+  border-radius: 50%;
+  filter: grayscale(1);
+  aspect-ratio: 1;
+}
+
+.post-authors h3 {
+  text-shadow: none;
+  padding: 0;
+}
+
+.pagination {
+  background-color: var(--in-blue);
+  padding: 2.5rem;
+}
+
+.pagination a {
+  color: var(--in-white);
+}
+
+.previous,
+.next {
+  flex-basis: 33%;
+}
+
+.previous {
+  margin-bottom: 1.5rem;
+  text-align: start;
+}
+
+.next {
+  text-align: end;
+}
+
+@media screen and (min-width: 768px) {
+
+  .post-authors {
+    padding: 1rem calc(1rem + 42px);
+    margin: 0;
+  }
+
+  .heading {
+    position: relative;
+  }
+
+  h2,
+  h3,
+  h4,
+  .toc {
+    margin: 2.5rem 0 1rem;
+    padding: 1rem;
+    padding-left: calc(1rem + 42px); 
+  }
+
+  .main p,
+  .main img:not(.avatar-img),
+  .main ul:not(.post-authors-list),
+  .main ol {
+    margin: 30px calc(1rem + 42px);  
+  }
+
+  .toc {
+    margin-bottom: 0;
+  }
+
+  #toc ul {
+    margin: 0;
+    margin-left: 1rem;
+  }
+
+  pre {
+    padding: 1rem calc(1rem + 42px); 
+  }
+
+  .post-authors h3 {
+    margin-top: 0;
+  }
+
+  .footnotes {
+    margin-top: 3rem;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .previous {
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .heading-link {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+  }
+
+  h2,
+  h3,
+  h4 {
+    display: inline-block;
+    width: 95%;
+    border-radius: 0 7px 7px 0;
+  }
+
+}

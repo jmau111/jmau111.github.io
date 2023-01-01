@@ -1,0 +1,11 @@
+description: 'Hacking & Development'
+repoURL: ''
+repoEditURL: ''
+titleSeparator: ' ✭ '
+icon: images/favicon-32x32.png
+siteType: Person
+publisherName: Julien Maury
+publisherLogo: images/favicon-32x32.png
+mainSections:
+  - post
+defaultImage: /images/default.jpg

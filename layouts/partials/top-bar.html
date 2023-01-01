@@ -1,0 +1,14 @@
+<nav class="top-bar">
+    <ul class="menu container">
+        <li class="menu-item{{ if .IsHome }} active{{ end }}">
+            <a href="{{ "/" | absURL }}" class="home" aria-label="Go to the Home page"></a>
+        </li>
+        {{- $currentPage := . -}}
+        {{- $slug := $currentPage.Slug -}}
+        {{ range .Site.Menus.main }}
+        <li class="menu-item{{ if eq .Identifier $slug }} active{{ end }}">
+            <a class="link-{{ .Identifier }}" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

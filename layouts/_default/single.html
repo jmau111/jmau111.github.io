@@ -1,0 +1,12 @@
+{{- define "main" -}}
+  <h1 class="title white">{{ .Title }}</h1>
+  {{- partial "toc" . -}}
+  <div class="content single">
+    {{- .Content -}}
+    {{- if .Params.loopAll -}}
+      {{- partial "all-pages" . -}}
+    {{- end -}}
+  </div>
+  {{- partial "author/post-author" . -}}
+  {{- partial "pagination-single" . -}}
+{{- end -}}

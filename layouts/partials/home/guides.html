@@ -1,0 +1,12 @@
+<section class="section plain guides 🕵️">
+  <h2 id="guides">Guides</h2>
+  <div class="grid m2v">
+    {{- range $.Site.Data.guides -}}
+    <article class="list-item box-shadow">
+      <h3>{{ .title }}</h3>
+      <p>{{ .desc }}</p>
+	  <a href="{{ .url }}" class="link homemade">Read the guide</a>
+    </article>
+    {{- end -}}
+  </div>
+</section>

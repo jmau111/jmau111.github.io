@@ -1,0 +1,32 @@
+[
+  {
+    "title": "CTF KISS 😘",
+    "url": "https://github.com/jmau111-org/ctf_kiss",
+    "desc": "Pratical guides and personal thoughts about CTFs (Capture The Flag) and associated online platforms."
+  },
+  {
+    "title": "Blue Sheet 🧢",
+    "url": "https://github.com/jmau111-org/blue_sheet",
+    "desc": "Practical commands for malware, forensic, network, memory analysis, for both Linux and Windows."
+  },
+  {
+    "title": "HTB Dirty scripts 😈",
+    "url": "https://github.com/jmau111-org/htb-dirty-scripts",
+    "desc": "Dirty & handmade scripts used during HTB CTFs to achieve a specific goal. These are not writeups."
+  },
+    {
+    "title": "Windows Security 🖳",
+    "url": "https://github.com/jmau111-org/windows_security",
+    "desc": "Is Windows a joke or are you? Let's dive into the most popular OS."
+  },
+    {
+    "title": "Linux recovery 🐱‍👓",
+    "url": "https://github.com/jmau111-org/linux_recovery_abuse",
+    "desc": "Misknown hacking method on Linux you can easily reproduce and ways to protect."
+  },
+    {
+    "title": "macOS Security 🍎",
+    "url": "https://github.com/jmau111-org/macos_security",
+    "desc": "Personal thoughts and helpful documentations about macOS security and internals."
+  }
+]

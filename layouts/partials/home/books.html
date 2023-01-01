@@ -1,0 +1,13 @@
+<section class="section plain books 🕵️">
+  <h2 id="books">Books</h2>
+  <p>Most resources are related to hacking, but life is rich. There many other interesting topics:</p>
+  <div class="books-list m2v">
+    {{- range $.Site.Data.books -}}
+    <article class="book-item box-shadow">
+		<a href="{{ .url }}" class="book" aria-label="Get {{ .title }}" title="{{ .title }} by {{ .author }}">
+			<img class="img" src="{{ printf "/images/books/%s" .img | absURL }}" loading="lazy" decoding="async" height="220" alt="">
+		</a>
+    </article>
+    {{- end -}}
+  </div>
+</section>

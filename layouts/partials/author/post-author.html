@@ -1,0 +1,18 @@
+{{ $taxo := "authors" }}
+{{ with .Param $taxo }}
+<aside class="post-authors">
+    <h3>Author(s)</h3>
+    <ul class="post-authors-list">
+        {{- range $index, $author := . -}}
+            {{- if gt $index 0 }}, {{ end -}}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo $author) -}}
+            <li>
+                <a href="{{ .Permalink }}" class="avatar" aria-label="Read more about {{ .Title }}">
+                    {{ partial "author/avatar-info" (dict "name" .Title "avatar" .Params.avatar) }}
+                </a>
+            </li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</aside>
+{{ end }}

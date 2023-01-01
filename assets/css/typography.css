@@ -1,0 +1,112 @@
+body {
+  font-family: monospace, monospace;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  font-weight: 900;
+}
+
+.top-bar a {   
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.site-title {
+  font-family: initial;
+  text-transform: capitalize;
+  letter-spacing: -0.75px;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.site-description {
+  font-size: 1rem;
+}
+
+h1,
+.title,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+  margin-scroll-top: 72px;
+  letter-spacing: -.75px;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: "Arial Black", "Arial Bold", gadget, sans-serif;
+}
+
+h1,
+.title {
+  font-size: clamp(1.2rem, 1rem + 3.5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1rem, .8rem + 3.5vw, 2.5rem);
+}
+
+h3,
+.site-title {
+  font-size: clamp(1rem, .6rem + 3.5vw, 2rem);
+}
+
+h4,
+.footnotes:before {
+  font-size: clamp(1rem, .6rem + 3.5vw, 1.5rem);
+}
+
+.post-link-title {
+  font-size: clamp(1rem, .6rem + 3.5vw, 1.25rem);
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.post-date {
+  font-weight: 300;
+}
+
+.content pre,
+code {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+.footnotes:before,
+.footnotes li:before {
+  font-weight: 800;
+}
+
+.smaller {
+  font-size: .95em;
+}
+
+#toc li:before,
+.copyright {
+  font-size: .8em;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  body,
+  .site-description {
+    font-size: 1.11em;
+  }
+}

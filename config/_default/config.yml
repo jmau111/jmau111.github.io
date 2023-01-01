@@ -1,0 +1,48 @@
+paginate: 7
+enableEmoji: true
+enableGitInfo: false
+summaryLength: 73
+canonifyurls: true
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+    pygmentsUseClasses: true
+    pygmentsCodefences: true
+  goldmark:
+    renderer:
+      unsafe: true
+  blackFriday:
+    angledQuotes: true
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+    sectionPagesMenu: main
+      
+permalinks:
+  posts: /:year/:month/:day/:slug/
+
+taxonomies:
+  tag: tags
+  series: series
+  author: authors
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: -111
+    - identifier: terms
+      name: Terms
+      url: /terms/
+      weight: -110
+
+build:
+  useResourceCacheWhen: always

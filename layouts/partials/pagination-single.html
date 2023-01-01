@@ -1,0 +1,14 @@
+{{ if or .PrevInSection .NextInSection }}
+<nav class="pagination" aria-label="pagination">    
+    <div class="previous">  
+    {{ with .PrevInSection }}  
+        <a href="{{ .Permalink }}" title="Read the post: '{{ .Title }}'">&#8592; Previous</a>   	            
+    {{ end }}  
+    </div>  
+    <div class="next">  
+    {{ with .NextInSection }}  
+        <a href="{{ .Permalink }}" title="Read the post: '{{ .Title }}'">Next &#8594;</a>
+    {{ end }}  
+    </div>  
+</nav>
+{{ end }}

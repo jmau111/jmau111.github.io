@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    {{ partialCached "meta/csp" . }}
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="preconnect" href="{{ .Site.BaseURL }}">
+    {{- $typo := resources.Get "css/typography.css" | resources.Minify | fingerprint "sha384" -}}
+    {{- $styles := resources.Get "css/styles.css" | resources.Minify | fingerprint "sha384" -}}
+    <link rel="stylesheet" href="{{ $typo.Permalink }}" integrity="{{ $typo.Data.Integrity }}" crossorigin="anonymous" media="screen">
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen">
+    {{- if .IsHome -}}
+      {{- $home := resources.Get "css/home.css" | resources.Minify | fingerprint "sha384" -}}
+      <link rel="stylesheet" href="{{ $home.Permalink }}" integrity="{{ $home.Data.Integrity }}" crossorigin="anonymous" media="screen">
+    {{- else -}}
+      {{- $page := resources.Get "css/page.css" | resources.Minify | fingerprint "sha384" -}}
+      {{- $chroma := resources.Get "css/chroma.css" | resources.Minify | fingerprint "sha384" -}}
+      <link rel="stylesheet" href="{{ $page.Permalink }}" integrity="{{ $page.Data.Integrity }}" crossorigin="anonymous" media="screen">
+      <link rel="stylesheet" href="{{ $chroma.Permalink }}" integrity="{{ $chroma.Data.Integrity }}" crossorigin="anonymous" media="screen">
+    {{- end -}}
+    {{- partial "meta/meta" . -}}
+    {{- partial "meta/meta-misc" . -}}
+  </head>
+  <body dir="{{ .Site.Language.LanguageDirection | default "ltr" }}" class="glow-up rockyou{{ if .IsHome }} home{{ end }}">
+    {{ partial "top-bar" . }}
+    <header class="site-header 🕵️">
+      <div class="inner container">
+        {{- if .IsHome -}}
+        <h1 class="site-title"><a href="/">{{- .Site.Title }}</a></h1>
+        {{- else -}}
+        <p class="site-title"><a href="/">{{- .Site.Title }}</a></p>
+        {{- end -}}
+        <p class="site-description">{{- .Site.Params.Description }}</p>
+      </div>
+    </header>
+    <main class="main container">
+      {{- block "main" . -}}{{- end -}}
+    </main>
+    <footer class="site-footer 🕵️">
+      {{- partial "footer/columns" . -}}
+      {{- partial "footer/copyright" . -}}
+    </footer>
+  </body>
+</html>

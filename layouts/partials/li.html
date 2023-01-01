@@ -1,0 +1,13 @@
+<li class="post-item">
+  <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ .Date.Format "2006/02/01" }} 
+  </time>
+  <a href="{{ .Permalink }}" class="post-link">
+    <span class="post-link-title">
+      {{ .Title }}
+    </span>
+  </a>
+  <span class="post-desc smaller">
+    {{ .Description }}
+  </span>
+</li>

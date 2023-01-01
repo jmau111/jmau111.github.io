@@ -1,0 +1,24 @@
+{{- define "main" -}}
+{{- $page := . -}}
+{{- $avatar :=  $page.Params.avatar -}}
+<h1 class="title white author-title">{{ $page.Title }}</h1>
+<div class="content author-content">
+    <!-- avatar -->
+    {{- partial "author/avatar-info" (dict "name" .Title "avatar" $avatar) -}}
+    <!-- /avatar -->
+
+    <!-- content -->
+    {{- .Content -}}
+    <!-- /content -->
+
+    <!-- social -->
+    {{- with $page.Params.social -}}
+    {{- partial "author/social" . }}
+    {{- end -}}
+    <!-- /social -->
+
+    <!-- posts -->
+    {{- partial "author/latest-posts" . -}}
+    <!-- /posts -->
+</div>
+{{- end -}}

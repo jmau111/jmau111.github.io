@@ -1,0 +1,70 @@
+{{- $separator := .Site.Params.TitleSeparator -}}
+{{- if .IsHome -}}
+<title>{{- .Site.Title -}}{{ $separator}}{{ .Site.Params.Description }}</title>
+<meta property="og:title" content="{{- .Site.Title -}}{{ $separator}}{{ .Site.Params.Description }}" />
+{{- else -}}
+<title>{{- .Params.Title -}}{{ $separator}}{{- .Site.Title -}}</title>
+<meta property="og:title" content="{{- .Params.Title -}}{{ $separator}}{{- .Site.Title -}}" />
+{{- end -}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+{{- $icon := partial "utils/get-image" (dict "context" . "url" .Site.Params.icon) -}}
+{{- with $icon -}}
+<meta property="og:image" content="{{ . }}">
+{{- end -}}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="description" content="{{ .Description | default .Site.Params.Description }}" />
+{{- if .IsPage -}}
+<meta property="og:description" content="{{ .Description }}" />
+{{- else -}}
+<meta property="og:description" content="{{ .Site.Params.Description }}" />
+{{- end -}}
+
+{{- with .Site.LanguageCode -}}
+<meta property="og:locale" content="{{ . }}" />
+{{- end -}}
+{{- if .IsTranslated -}}
+{{- range .Translations -}}
+<meta property="og:locale:alternate" content="{{ .Lang }}" />
+{{- end -}}
+{{- end -}}
+
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+{{- if .IsPage -}}
+{{- if not .PublishDate.IsZero -}}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+{{- else if not .Date.IsZero -}}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+{{- end -}}
+{{- if not .Lastmod.IsZero -}}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+{{- end -}}
+{{- else -}}
+{{- if not .Date.IsZero -}}
+<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}" />
+{{- end -}}
+{{- end -}}
+
+<meta property="article:section" content="{{ .Section }}" />
+{{- with .Params.tags -}}
+{{ range first 6 . -}}
+<meta property="article:tag" content="{{ . }}" />
+{{- end -}}
+{{- end -}}
+
+{{- if .GetTerms "series" -}}
+{{- $pageLink := .Permalink -}}
+{{- $series := .Site.Taxonomies.series -}}
+{{- range (.GetTerms "series") -}}
+{{- range .Pages -}}
+{{- if ne .Page.Permalink $pageLink -}}
+<meta property="og:see_also" content="{{ .Page.Permalink }}" />
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- else if (.Site.RegularPages.Related .) -}}
+{{- range (.Site.RegularPages.Related . | first 6) -}}
+<meta property="og:see_also" content="{{ .Page.Permalink }}" />
+{{- end -}}
+{{- end -}}

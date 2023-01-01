@@ -1,0 +1,29 @@
+{
+  "name": "jmau111.github.io",
+  "short_name": "jmau111",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/images/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/favicon-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    }
+  ],
+  "description": "Share knowledge, not secrets.",
+  "lang": "en",
+  "categories": ["hacking", "forensics"]
+}

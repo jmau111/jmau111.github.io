@@ -1,0 +1,11 @@
+<h2 class="white">Social networks</h2>
+<p>You can find me on the following platforms:</p>
+<ul>
+    {{- range $index, $d := . -}}
+    {{ if and (isset $d "text") (isset $d "url") }}
+    <li class="{{ $d }}">
+        <a href="{{ (index $d "url") }}">{{ (index $d "text") }}</a>
+    </li>
+    {{- end -}}
+    {{- end -}}
+</ul>

@@ -1,0 +1,16 @@
+<div class="avatar-info">    
+    <figure>
+        <img 
+            decoding="async" 
+            loading="lazy" 
+            width="96" 
+            height="96" 
+            class="avatar-img" 
+            src="/images/authors/{{ .avatar | default "nope.jpeg" }}" 
+            alt=""
+        >
+        <figcaption class="avatar-pseudo screen-reader-text">
+            {{ .name }}
+        </figcaption>
+    </figure>
+</div>

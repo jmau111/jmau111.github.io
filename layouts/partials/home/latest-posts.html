@@ -1,0 +1,9 @@
+<section class="section posts plain 🕵️">
+  <h2 id="posts">Articles</h2>
+  {{ $recents := (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
+  <ul class="latest-posts">
+  {{- range first 5 $recents }}
+  {{- partial "li" . -}}
+  {{- end -}}
+  </ul>
+</section>

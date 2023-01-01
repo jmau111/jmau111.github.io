@@ -1,0 +1,5 @@
+Hiya!
+
+Thanks for reading this file. However, unless you have spotted something juicy, like vulnerabilities in GitHub's infrastructure, I don't think such static websites are really worth your time.
+
+J.
