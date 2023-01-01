@@ -32,7 +32,7 @@ h4 {
 .heading-link {
   display: inline-block;
   vertical-align: middle;
-  background: url("/images/link.svg") no-repeat center center;
+  background: url("/svgs/link.svg") no-repeat center center;
   background-size: cover;
   width: 24px;
   height: 24px;
