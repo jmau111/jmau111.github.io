@@ -69,7 +69,7 @@ sudo ufw default deny outgoing
 sudo ufw allow out to any port 80
 sudo ufw allow out to any port 443
 sudo ufw allow out to any port 53
-sudo ufw logging on
+sudo ufw logging high
 sudo ufw reload
 ```
 
