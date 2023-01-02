@@ -121,7 +121,7 @@ Best tools
 
 Most packages might be best suited for an individual usage and are only suggested for your tests.
 
-Besides, their setup might be tricky, so read each documentation carefully before. Windows and macOS apps should be more easy to configure, though.
+Besides, their setup might be tricky, so read each documentation carefully before. Windows and macOS apps should be easier to configure, though.
 
 ### Linux tools
 
