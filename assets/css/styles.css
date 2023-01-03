@@ -386,7 +386,7 @@ p>code {
   }
 
   .footer-columns {
-    padding: 1.5rem .75rem;
+    padding: 2rem 0;
     gap: 1rem;
     justify-content: stretch;
   }
