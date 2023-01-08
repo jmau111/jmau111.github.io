@@ -29,8 +29,6 @@ permalinks:
   posts: /:year/:month/:day/:slug/
 
 taxonomies:
-  tag: tags
-  series: series
   author: authors
 
 menu:

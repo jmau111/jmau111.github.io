@@ -1,0 +1,8 @@
+{{- range .Data.Pages.GroupByDate "2006" -}}
+    <h3 class="white">{{ .Key }}</h3>
+    <ul class="latest-posts">
+    {{- range (where .Pages "Type" "post") }}
+        {{- partial "li" . -}}
+    {{- end }}
+    </ul>
+{{- end -}}

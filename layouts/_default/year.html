@@ -1,0 +1,17 @@
+{{- define "main" -}}
+{{- $year := .Date.Format "2006" -}}
+<h1 class="title white">{{ .Title }}: {{ .Description }}</h1>
+<div class="content">
+    {{- if and (gt .WordCount 0 ) -}}
+        {{- .Content -}}
+    {{- end -}}
+    <ul class="latest-posts">
+    {{- range (where .Site.RegularPages "Type" "post") }}
+    <!-- hack because it's not native in Hugo -->
+    {{- if eq (.Date.Format "2006") $year }}
+        {{- partial "li" . }}
+    {{- end }}
+    {{- end }}
+    </ul>
+</div>
+{{- end -}}

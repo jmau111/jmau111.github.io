@@ -1,7 +1,6 @@
 {{- define "main" -}}
-{{- $page := . -}}
-{{- $avatar :=  $page.Params.avatar -}}
-<h1 class="title white author-title">{{ $page.Title }}</h1>
+{{- $avatar :=  .Params.avatar -}}
+<h1 class="title white author-title">{{ .Title }}</h1>
 <div class="content author-content">
     <!-- avatar -->
     {{- partial "author/avatar-info" (dict "name" .Title "avatar" $avatar) -}}
@@ -12,13 +11,14 @@
     <!-- /content -->
 
     <!-- social -->
-    {{- with $page.Params.social -}}
+    {{- with .Params.social -}}
     {{- partial "author/social" . }}
     {{- end -}}
     <!-- /social -->
 
     <!-- posts -->
-    {{- partial "author/latest-posts" . -}}
+    <h2 class="white">My posts</h2>
+    {{- partial "posts" . -}}
     <!-- /posts -->
 </div>
 {{- end -}}
