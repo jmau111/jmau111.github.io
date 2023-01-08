@@ -182,14 +182,14 @@ body {
 .top-bar a {
   opacity: .9;
   display: block;
-  width: 32px;
-  height: 32px;
   line-height: 2.5;
   text-decoration: none;
   color: var(--in-white);
 }
 
 .top-bar .home {
+  width: 32px;
+  height: 32px;
   filter: invert(1);
   background-size: cover;
   background: url("/svgs/home.svg") no-repeat center center;
@@ -339,13 +339,18 @@ p>code {
   color: var(--in-white);
 }
 
-.rss {
+.rss, 
+.octocat {
   display: inline-block;
   width: 19px;
   height: 19px;
   background-image: url("/svgs/rss.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.octocat {
+  background-image: url("/svgs/octocat.svg");
 }
 
 @media (hover: none) {

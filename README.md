@@ -6,4 +6,4 @@
 
 https://jmau111.github.io 
 
-![1985](btf.jpeg)
+![1985](static/images/btf.jpeg)
