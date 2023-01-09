@@ -1,5 +1,5 @@
 ---
-title: "Personal thoughts on OS security"
+title: "Thoughts on OS security"
 description: "macOS, Windows, and Linux have very different approaches of security."
 slug: "operating-systems-security"
 date: "2023-01-09"
