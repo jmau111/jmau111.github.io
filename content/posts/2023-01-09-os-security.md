@@ -11,7 +11,7 @@ I wrote some guides about operating systems I've used for many years as a casual
 
 ## What you will read there
 
-Various analysis and personal thoughts about each OS. The Linux guide is more specific, though, and highlights a special mode that remains quite misknown by most users.
+Various analysis and personal thoughts about each OS.
 
 You also find the best resources for beginners to me (e.g., useful links for various tools and other guides), for example, to harden your OS or learn about attacking techniques.
 
@@ -47,4 +47,4 @@ From what I've seen so far, these paradoxes happen quite often.
 
 * [macOS](https://github.com/jmau111-org/macos_security)
 * [Windows](https://github.com/jmau111-org/windows_security)
-* [Linux recovery](https://github.com/jmau111-org/linux_recovery_abuse)
+* [Linux](https://github.com/jmau111-org/linux_security)
