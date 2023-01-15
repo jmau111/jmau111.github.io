@@ -77,3 +77,7 @@ The main caveat of using SSH to sign commits is that old versions of OpenSSH are
 Also, it's essential to bear in mind that cryptographic keys should be used with caution. In other words, don't use the same pairs for multiple machines and purposes.
 
 
+EDIT: 01/15/2023
+--------
+
+I've added a Bash script to ease the process. Maybe [try it](https://github.com/jmau111-org/sign-commits) because sometimes "c'est chiant."
