@@ -3,6 +3,7 @@ enableEmoji: true
 enableGitInfo: false
 summaryLength: 73
 canonifyurls: true
+enableRobotsTXT: true
 defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
