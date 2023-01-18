@@ -98,6 +98,7 @@ To see how SELinux maps specific entities, use the `semanage` command:
 
 ```
 semanage user -l
+semanage login -l
 semanage port -l
 ```
 
