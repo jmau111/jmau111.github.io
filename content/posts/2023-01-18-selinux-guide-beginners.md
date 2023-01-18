@@ -42,6 +42,8 @@ Replace AppArmor by SELinux if it's installed (as it's the same purpose: isolati
 sudo systemctl stop apparmor
 sudo apt purge -y apparmor
 sudo apt install -y selinux-basics selinux-policy-default auditd
+sudo selinux-activate
+sudo systemctl enable auditd
 ```
 
 You have two main modes for SELinux:
