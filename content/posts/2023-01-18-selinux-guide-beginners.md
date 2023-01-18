@@ -44,6 +44,7 @@ sudo apt purge -y apparmor
 sudo apt install -y selinux-basics selinux-policy-default auditd
 sudo selinux-activate
 sudo systemctl enable auditd
+reboot # required
 ```
 
 You have two main modes for SELinux:
