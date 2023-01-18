@@ -103,7 +103,7 @@ Modifying the context
 
 Once you get more familiar with SELinux, you want to modify values and include your custom app. This part can be tricky, especially at the beginning, and will likely require some troubleshooting, as errors happen frequently.
 
-In any case, a basic example would be:
+In any case, a basic example could be:
 
 ```
 semanage fcontext -a httpd_sys_rw_content_t "/var/www/html/wordpress/wp-content/uploads(/.*)?"
