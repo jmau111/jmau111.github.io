@@ -1,5 +1,5 @@
 ---
-title: "Beginner's guide for SELinux"
+title: "SELinux: Beginner's guide"
 description: "As a developer, a sysadmin, or a hacker, you might want to know a bit more about SELinux."
 slug: "selinux-guide-beginners"
 date: "2023-01-18"
