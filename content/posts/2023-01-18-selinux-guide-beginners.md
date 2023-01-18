@@ -55,7 +55,7 @@ You have two main modes for SELinux:
 If you are on a server, ensure ssh and other services you might need are allowed before quitting:
 
 ```
-sudo semanage port -l
+semanage port -l
 ```
 
 You can inspect logs in `/var/log/audit/audit.log`.
