@@ -1,6 +1,6 @@
 ---
 title: "Privacy policy"
-description: "0 Tracking"
+description: "0 Tracking is not extreme on a blog"
 slug: "privacy"
 ---
 
