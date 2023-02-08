@@ -1,5 +1,5 @@
 ---
-title: "Windows PowerShell and reg commands"
+title: "Windows PowerShell and reg cmds"
 description: "Review useful tricks to attack Windows and its registry, but also learn how to mitigate these threats"
 slug: "windows-powershell-reg"
 date: "2023-02-08"
@@ -9,7 +9,7 @@ authors: ["jmau111"]
 
 I've been "PowerShelling" over the past weeks, so here are commands and tricks I find helpful for Windows security.
 
-## System commands are prone to attacks
+## System cmds
 
 While it should be noted that most attacks require elevated privileges, like "admin" capabilities, misconfigured machines usually allow advanced enumeration, and sometimes even privilege escalation. Besides, many organizations attribute admin roles to some employees only for convenience, which breaks the least privilege principle and grant way too many privileges to these accounts.
 
