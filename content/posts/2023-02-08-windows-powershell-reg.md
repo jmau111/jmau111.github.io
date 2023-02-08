@@ -7,7 +7,7 @@ type: "post"
 authors: ["jmau111"]
 ---
 
-I've been "PowerShelling" over the past weeks, so here are commands and tricks I find helpful for Windows security.
+I've been "PowerShelling" in the past weeks, so here are commands and tricks I find helpful for Windows security.
 
 ## System cmds
 
