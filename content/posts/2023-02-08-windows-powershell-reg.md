@@ -1,5 +1,5 @@
 ---
-title: "Windows PowerShell and reg cmds"
+title: "Windows PowerShell & reg"
 description: "Review useful tricks to attack Windows and its registry, but also learn how to mitigate these threats"
 slug: "windows-powershell-reg"
 date: "2023-02-08"
