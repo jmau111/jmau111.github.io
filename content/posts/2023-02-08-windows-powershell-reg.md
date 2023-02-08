@@ -13,7 +13,9 @@ I've been "PowerShelling" over the past weeks, so here are commands and tricks I
 
 While it should be noted that most attacks require elevated privileges, like "admin" capabilities, misconfigured machines usually allow advanced enumeration, and sometimes even privilege escalation. Besides, many organizations attribute admin roles to some employees only for convenience, which breaks the least privilege principle and grant way too many privileges to these accounts.
 
-The PowerShell syntax is pretty convenient to use, and even if security products and policies can detect and even block `PowerShell.exe`, there are ways to run the same commands without using the system executable. You can also obfuscate malicious commands to evade detection, but the two guides I'll link here won't cover that specific part to keep things as simple as possible.
+The PowerShell syntax is pretty convenient to use, and even if security products and policies can detect and even block `PowerShell.exe`, there are ways to run the same commands without using the system executable.
+ 
+You can also obfuscate malicious commands to evade detection, but the two guides I'll link here won't cover that specific part to keep things as simple as possible.
 
 These commands are powerful and allow extracting sensitive data, but you can also disable security settings and functionalities, as the Registry hives control pretty much everything on the system.
 
@@ -21,7 +23,9 @@ These commands are powerful and allow extracting sensitive data, but you can als
 
 I've found lots of information about attacking techniques and even free tools to automate enumeration and privesc. In contrast, there are very few resources to mitigate the threats and harden the system.
 
-As usual, nothing is bulletproof, but you might leverage advanced features like JEA (Just Enough Administration) that can improve PowerShell security significantly. With a robust configuration and an appropriate logging system, you can mitigate entire classes of vulnerabilities and attacks, and, above all, understand what's happening.
+As usual, nothing is bulletproof, but you might leverage advanced features like JEA (Just Enough Administration) that can improve PowerShell security significantly. 
+
+With a robust configuration and an appropriate logging system, you can mitigate entire classes of vulnerabilities and attacks, and, above all, understand what's happening.
 
 ## Log & monitor
 
