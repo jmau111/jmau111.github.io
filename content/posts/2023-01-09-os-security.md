@@ -19,7 +19,7 @@ The latest versions of Windows are significantly more secure than the previous o
 
 It does not solve all issues, and none of these OSes can prevent its users from installing malicious third-party apps. However, you get more granularity, better kernel isolation, and enhanced memory protection.
 
-## 7 key points
+## Key points
 
 * **never rely on default configs** for your security, as OSes usually do not enable all mitigations for you automatically (e.g., for the usability)
 * aggressive patch management (~ keeping all the things up-to-date) is not optional
@@ -29,7 +29,7 @@ It does not solve all issues, and none of these OSes can prevent its users from 
 * use password managers, regardless of the system
 * compartmentalize
 
-## 7 security paradoxes
+## Security paradoxes
 
 What I mean by "paradoxes":
 
