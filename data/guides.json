@@ -1,16 +1,11 @@
 [
   {
-    "title": "CTF KISS 😘",
-    "url": "https://github.com/jmau111-org/ctf_kiss",
-    "desc": "Pratical guides and personal thoughts about CTFs (Capture The Flag) and associated online platforms."
-  },
-  {
     "title": "Blue Sheet 🧢",
     "url": "https://github.com/jmau111-org/blue_sheet",
     "desc": "Practical commands for malware, forensic, network, memory analysis, for both Linux and Windows."
   },
   {
-    "title": "PowerShell Cheat Sheet 🧢",
+    "title": "PowerShell Cmdlets 🧢",
     "url": "https://github.com/jmau111-org/powershell_commands",
     "desc": "Helpful commands for attack/defense, and useful tools to secure Windows."
   },
@@ -19,14 +14,19 @@
     "url": "https://github.com/jmau111-org/windows_security",
     "desc": "Is Windows a joke or are you? Let's dive into the most popular OS."
   },
-    {
-    "title": "Linux Security 🐱‍👓",
-    "url": "https://github.com/jmau111-org/linux_security",
-    "desc": "Ways to protect Linux."
+  {
+    "title": "Wireless security 📶",
+    "url": "https://github.com/jmau111-org/wireless_security",
+    "desc": "How to secure wireless connections."
   },
     {
     "title": "macOS Security 🍎",
     "url": "https://github.com/jmau111-org/macos_security",
     "desc": "Personal thoughts and helpful documentations about macOS security and internals."
+  },
+      {
+    "title": "Linux Security 🐱‍👓",
+    "url": "https://github.com/jmau111-org/linux_security",
+    "desc": "Ways to protect Linux."
   }
 ]
