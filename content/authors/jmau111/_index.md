@@ -6,9 +6,12 @@ type: "author"
 date: "1000-01-01"
 avatar: "j.png"
 social:
-   dev:
-    text: "DEV"
-    url: "https://dev.to/jmau111"
+   infosec:
+    text: "infosec.exchange"
+    url: "https://infosec.exchange/@jmau111"
+   ioc:
+    text: "ioc.exchange"
+    url: "https://ioc.exchange/@jmau111"
 ---
 
 Hello, I'm Julien. I've created this blog. It's mainly about hacking and my journey in cyber, but good contributions are welcome.
