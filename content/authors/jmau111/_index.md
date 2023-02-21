@@ -18,7 +18,7 @@ Hello, I'm Julien. I've created this blog. It's mainly about hacking and my jour
 
 Love the following problem, can you solve it in 10s (or less)?
 
-> A man goes to a bar, he sees 7 of his friends outside. They were waiting for him. They shake hands. How many handshakes does it make?
+> A man goes to a bar, he sees 9 of his friends outside. They were waiting for him. They shake hands. How many handshakes does it make?
 
 _N.B.: we assume his friends were waiting for him to start greeting._
 
