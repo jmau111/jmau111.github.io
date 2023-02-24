@@ -80,4 +80,4 @@ Also, it's essential to bear in mind that cryptographic keys should be used with
 EDIT: 01/15/2023
 --------
 
-I've added a Bash script to ease the process. Maybe [try it](https://github.com/jmau111-org/sign-commits) because sometimes "c'est chiant."
+I've added a Bash script to ease the process. Maybe [try it]([https://github.com/jmau111-org/bash-scriptssign-commits](https://raw.githubusercontent.com/jmau111-org/bash-scripts/main/ssh_sign_commits)) because sometimes "c'est chiant."
