@@ -82,4 +82,4 @@ EDIT: 01/15/2023
 
 I've added a Bash script to ease the process. 
 
-[Try it]([https://github.com/jmau111-org/bash-scriptssign-commits](https://raw.githubusercontent.com/jmau111-org/bash-scripts/main/ssh_sign_commits))
+[Try it](https://raw.githubusercontent.com/d3fenderz/bash-scripts/main/ssh_sign_commits))
