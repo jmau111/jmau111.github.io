@@ -45,6 +45,6 @@ From what I've seen so far, these paradoxes happen quite often.
 
 ## Read the READMEs
 
-* [macOS](https://github.com/jmau111-org/macos_security)
-* [Windows](https://github.com/jmau111-org/windows_security)
-* [Linux](https://github.com/jmau111-org/linux_security)
+* [macOS](https://github.com/d3fenderz/macos_security)
+* [Windows](https://github.com/d3fenderz/windows_security)
+* [Linux](https://github.com/d3fenderz/linux_security)
